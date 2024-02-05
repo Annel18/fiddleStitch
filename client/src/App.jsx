@@ -1,11 +1,20 @@
+import ToolBox from './components/ToolBox'
 function App() {
 
 
-  return (
-    <>
-<h1>Hello World!</h1>
-    </>
-  )
+    return (
+        <>
+            <header>
+                <ToolBox></ToolBox>
+            </header>
+            <main>
+
+            </main>
+            <footer>
+
+            </footer>
+        </>
+    )
 }
 
 export default App
