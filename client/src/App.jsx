@@ -1,14 +1,17 @@
 import ToolBox from './components/ToolBox'
+import StitchesCollection from './components/StitchesCollection'
+
+
 function App() {
 
 
     return (
         <>
             <header>
-                <ToolBox></ToolBox>
+                <ToolBox />
             </header>
             <main>
-
+                <StitchesCollection />
             </main>
             <footer>
 
