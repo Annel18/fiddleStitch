@@ -7,6 +7,9 @@
     width: min-content;
     max-height: calc(100vh - 102px);
     overflow: scroll;
+    text-wrap: nowrap;
+    padding-right: 4rem;
+    background-color: $primary-fill-color;
 }
 
 .stitches {

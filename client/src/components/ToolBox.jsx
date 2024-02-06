@@ -59,9 +59,9 @@ export default function ToolBox() {
                     })
                 }
             </div>
-            <div className="hamburgerMenu">
+            {/* <div className="hamburgerMenu">
                 <h1>+</h1>
-            </div>
+            </div> */}
         </section>
     )
 }

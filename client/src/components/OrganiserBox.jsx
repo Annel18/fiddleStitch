@@ -5,7 +5,7 @@ export default function OrganiserBox() {
     return (
         <section className='stitchBox'>
 
-                <h5 >Groups</h5>
+                <h5 >Grouped components</h5>
                 <div >
                     {groups
                         .map((group, i) => {
