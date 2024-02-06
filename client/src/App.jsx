@@ -1,5 +1,6 @@
 import ToolBox from './components/ToolBox'
 import StitchesCollection from './components/StitchesCollection'
+import Grid from './components/Grid'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             </header>
             <main>
                 <StitchesCollection />
+                <Grid />
             </main>
             <footer>
 

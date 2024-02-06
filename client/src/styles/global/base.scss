@@ -10,6 +10,10 @@ html{
 header{
     display: flex;
     justify-content: flex-start;
-    
     flex-wrap: nowrap;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
 }
