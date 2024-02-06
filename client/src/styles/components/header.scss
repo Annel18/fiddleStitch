@@ -1,0 +1,22 @@
+#primary-header {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+#secondary-header {
+    display: flex;
+    // justify-content: flex-start;
+    // flex-wrap: nowrap;
+    // border: 1px solid black;
+    margin-top: 10px;
+    height: fit-content;
+    width: -webkit-fill-available;
+}
+
+.tab {
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    margin: 0 5px 0 0 ;
+}

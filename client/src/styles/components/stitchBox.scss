@@ -5,17 +5,20 @@
     align-items: flex-start;
     padding: 1rem;
     width: min-content;
+    max-height: calc(100vh - 102px);
+    overflow: scroll;
 }
 
-.stitches{
-    display:flex;
+.stitches {
+    display: flex;
     align-items: center;
 }
+
 .stitchBoxIcon {
     max-height: 30px;
 }
 
-.stitchBoxTitle{
+.stitchBoxTitle {
     padding-left: 1rem;
     font-size: small;
     text-wrap: nowrap;

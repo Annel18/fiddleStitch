@@ -1,0 +1,46 @@
+#hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    // height: 100;
+}
+
+#work-space{
+    position: relative;
+    transform-origin: 0px 0px;
+    display: block;
+    cursor: default;
+    overflow: hidden;
+    // width:  100%;
+    height:  100%;
+}
+
+canvas{
+    position: absolute;
+    display: inline-block;
+    // vertical-align: baseline;
+    width: 100%;
+    height: -webkit-fill-available;
+    // aspect-ratio: auto;
+    border: 1px solid black;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    cursor: default;
+}
+
+#instruction-space{
+    // border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    height:  10rem;
+
+    textarea{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        // display: flex;
+        // align-items: flex-start;
+        text-wrap: wrap;
+    }
+}

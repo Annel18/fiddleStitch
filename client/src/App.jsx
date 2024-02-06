@@ -1,6 +1,8 @@
 import ToolBox from './components/ToolBox'
+// import Tabs from './components/Tabs'
 import StitchesCollection from './components/StitchesCollection'
-import Grid from './components/Grid'
+import Workspace from './components/Workspace'
+import OrganiserBox from './components/OrganiserBox'
 
 
 function App() {
@@ -10,10 +12,12 @@ function App() {
         <>
             <header>
                 <ToolBox />
+                {/* <Tabs /> */}
             </header>
             <main>
                 <StitchesCollection />
-                <Grid />
+                <Workspace />
+                <OrganiserBox />
             </main>
             <footer>
 

@@ -41,27 +41,27 @@ export default function ToolBox() {
     ]
 
     return (
-        <>
-        <section className='hamburgerMenu'>
-            <div></div>
-            <div></div>
-            <div></div>
+        <section id="primary-header">
+            <div className="hamburgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div className="toolBox">
+                {toolBox.
+                    map((tool, i) => {
+                        return (
+                            <div className="tool" key={i}>
+                                <img className="toolBoxIcon" src={tool.icon} alt={tool.title} title={tool.title} />
+                                <p className="toolBoxTitle">{tool.title}</p>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className="hamburgerMenu">
+                <h1>+</h1>
+            </div>
         </section>
-        <section className='toolBox'>
-            {toolBox.
-                map((tool,i) => {
-                    return (
-                        <div className='tool' key={i}>
-                            <img className='toolBoxIcon' src={tool.icon} alt={tool.title}  title={tool.title}/>
-                            <p className='toolBoxTitle'>{tool.title}</p>
-                        </div>
-                    )
-                })
-            }
-        </section>
-        <section className='hamburgerMenu'>
-            <h1>+</h1>
-        </section>
-        </>
     )
 }
