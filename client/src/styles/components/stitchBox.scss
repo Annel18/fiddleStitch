@@ -1,16 +1,17 @@
-.stitchBox {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    width: min-content;
-    max-height: calc(100vh - 102px);
-    overflow: scroll;
-    text-wrap: nowrap;
-    padding-right: 4rem;
+.stitchBox-container {
+    margin: 1rem;
+    width: 18rem;
     background-color: $primary-fill-color;
 }
+
+.stitchBox {
+    height: calc(100vh - 165px);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
 
 .stitches {
     display: flex;

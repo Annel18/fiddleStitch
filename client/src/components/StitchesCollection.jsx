@@ -51,28 +51,31 @@ export default function StitchesCollection() {
 
 
     return (
-        <section className='stitchBox'>
-            {categories
-                .map((category, i) => {
-                    return (
-                        <div key={i} >
-                            <h5 >{category}</h5>
-                            <div >
-                                {stitches
-                                    .filter(stitch => stitch.category.includes(category))
-                                    .map((stitch, i) => {
-                                        return (
-                                            <div className='stitches' key={i}>
-                                                <img className='stitchBoxIcon' src={stitch.logo} alt={stitch.title} title={stitch.title} />
-                                                <p className='stitchBoxTitle'>{stitch.abreviation}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
+        <section className='stitchBox-container' >
+            <h4 className='toolBox-header'>STITCHES</h4>
+            <div className='stitchBox'>
+                {categories
+                    .map((category, i) => {
+                        return (
+                            <div key={i} >
+                                <h5 >{category}</h5>
+                                <div >
+                                    {stitches
+                                        .filter(stitch => stitch.category.includes(category))
+                                        .map((stitch, i) => {
+                                            return (
+                                                <div className='stitches' key={i}>
+                                                    <img className='stitchBoxIcon' src={stitch.logo} alt={stitch.title} title={stitch.title} />
+                                                    <p className='stitchBoxTitle'>{stitch.abreviation}</p>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+            </div>
         </section>
     )
 }

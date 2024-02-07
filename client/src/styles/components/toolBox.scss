@@ -1,5 +1,12 @@
+.toolBox-header {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid $primary-text-color;
+    width: auto;
+}
+
 .toolBox {
-    border: 1px solid black;
+    // border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -8,18 +15,20 @@
     width: -webkit-fill-available;
     background-color: $primary-fill-color;
 }
-.tool{
+
+.tool {
     // padding: 1rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     // max-width: 30px;
     align-items: center;
 }
+
 .toolBoxIcon {
     max-height: 30px;
 }
 
-.toolBoxTitle{
+.toolBoxTitle {
     text-align: center;
     padding-top: 1rem;
     margin: 0;
