@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
 export default function Grid() {
-    const [width, setWidth] = useState(20);
-    const [height, setHeight] = useState(20);
-    const [cells, setCells] = useState([]);
+    const [width, setWidth] = useState(20)
+    const [height, setHeight] = useState(20)
+    const [cells, setCells] = useState([])
 
     useEffect(() => {
         const createGrid = () => {
-            const grid = [];
-            const cellSize = `${100 / width}%`; // Ensure cells are square
+            const grid = []
+            const cellSize = `${100 / width}%` // Ensure cells are square
             for (let i = 0; i < height; i++) {
                 for (let j = 0; j < width; j++) {
-                    const cellIndex = i * width + j;
+                    const cellIndex = i * width + j
                     grid.push(
                         <div
                             key={cellIndex}
@@ -26,14 +26,14 @@ export default function Grid() {
                         >
                             {/* Optionally add content inside each cell */}
                         </div>
-                    );
+                    )
                 }
             }
-            setCells(grid);
+            setCells(grid)
         };
 
-        createGrid();
-    }, [width, height]);
+        createGrid()
+    }, [width, height])
 
     return (
         <div className="grid-container">
