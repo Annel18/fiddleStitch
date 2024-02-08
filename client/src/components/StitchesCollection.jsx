@@ -23,7 +23,7 @@ export default function StitchesCollection() {
     const stitches = [
         { title: 'Knit', abreviation: 'k', category: 'Basic stitches', logo: k },
         { title: 'Purl', abreviation: 'p', category: 'Basic stitches', logo: p },
-        { title: 'No stitch', abreviation: '', category: 'Basic stitches', logo: noStitch },
+        { title: 'No stitch', abreviation: 'no stitch', category: 'Basic stitches', logo: noStitch },
         { title: 'Make 1 left leaning', abreviation: 'm1l', category: 'Knit increases', logo: m1l },
         { title: 'Make 1 right leaning', abreviation: 'm1r', category: 'Knit increases', logo: m1r },
         { title: 'Make 1 purlwise left leaning', abreviation: 'm1pl', category: 'Purl increases', logo: m1pl },
@@ -50,6 +50,12 @@ export default function StitchesCollection() {
     const categories = categoriesAll.filter((a, b) => categoriesAll.indexOf(a) === b)
 
 
+    function handleClick(stitch) {
+        localStorage.setItem("logo", stitch.logo)
+        console.log(stitch.logo)
+    }
+
+
     return (
         <section className='stitchBox-container' >
             <h4 className='toolBox-header'>STITCHES</h4>
@@ -62,12 +68,12 @@ export default function StitchesCollection() {
                                 <div >
                                     {stitches
                                         .filter(stitch => stitch.category.includes(category))
-                                        .map((stitch, i) => {
+                                        .map((stitch) => {
                                             return (
-                                                <div className='stitches' key={i}>
+                                                <button className='stitches' id={stitch.abreviation} key={i} onClick={() => handleClick(stitch)}>
                                                     <img className='stitchBoxIcon' src={stitch.logo} alt={stitch.title} title={stitch.title} />
                                                     <p className='stitchBoxTitle'>{stitch.abreviation}</p>
-                                                </div>
+                                                </button>
                                             )
                                         })
                                     }
