@@ -3,15 +3,28 @@
     font-family: Helvetica, sans-serif;
 }
 
-html{
+html {
     font-size: 16px;
     background-color: $background-color;
 }
-body{
+
+body {
     margin: 0;
 }
-main{
+
+main {
     // width: 100vw;
     // height: 100vh;
     display: flex;
+}
+
+button {
+    background-color: $primary-fill-color;
+    border: none;
+    border-radius: 0px;
+    background: #e6e6e6;
+    box-shadow: 6px 6px 12px #d6d6d6,
+        -6px -6px 12px #f6f6f6;
+    cursor: pointer;
+    // margin-bottom: 0.5rem;
 }
