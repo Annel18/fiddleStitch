@@ -51,10 +51,10 @@ export default function ToolBox() {
                 {toolBox.
                     map((tool, i) => {
                         return (
-                            <div className="tool" key={i}>
+                            <button className="tool" key={i}>
                                 <img className="toolBoxIcon" src={tool.icon} alt={tool.title} title={tool.title} />
                                 <p className="toolBoxTitle">{tool.title}</p>
-                            </div>
+                            </button>
                         )
                     })
                 }
